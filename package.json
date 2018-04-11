@@ -1,0 +1,23 @@
+{
+	"name": "arcdev.io",
+	"version": "1.0.0",
+	"description": "arcdev.io",
+	"main": "index.js",
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"b": "muleify pack -t src docs",
+		"t": "muleify serve -wt src dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AlexanderElias/arcdev.io.git"
+	},
+	"author": "Arc IO",
+	"license": "SEE LICENSE IN LICENSE",
+	"bugs": {
+		"url": "https://github.com/AlexanderElias/arcdev.io/issues"
+	},
+	"homepage": "https://github.com/AlexanderElias/arcdev.io#readme"
+}
