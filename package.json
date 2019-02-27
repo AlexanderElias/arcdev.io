@@ -7,14 +7,14 @@
 		"doc": "docs"
 	},
 	"scripts": {
-		"b": "muleify pack -t src docs",
-		"t": "muleify serve -wt src dev"
+		"b": "muleify -pt src docs",
+		"t": "muleify -swt src dev"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/AlexanderElias/arcdev.io.git"
 	},
-	"author": "Arc IO",
+	"author": "Arc io",
 	"license": "SEE LICENSE IN LICENSE",
 	"bugs": {
 		"url": "https://github.com/AlexanderElias/arcdev.io/issues"

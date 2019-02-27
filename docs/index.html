@@ -7,14 +7,51 @@
 
 	<title>Arc i|o</title>
 
+	<link rel="preload" href="./index.css" as="style">
+	<link rel="preload" href="./index.js" as="script">
+	<link rel="preload" href="./astatine.min.js" as="script">
+
+	<script src="./astatine.min.js" defer></script>
+	<script src="./index.js" defer></script>
+
 	<link rel="stylesheet" href="./index.css">
 
 </head>
 <body>
 
+	<header>
+
+	</header>
+
 	<main>
-		<h1>Arc i|o</h1>
+
+		<section>
+			<h1>Arc i|o</h1>
+			<div class="arrow"></div>
+		</section>
+
+		<section>
+			<h2>About Us</h2>
+			<p>We develop and design website and web applications we use the latest and greatest technologies to provide an experience that will be remembered. If you have any questions contact us we look forward to answering any inquires.</p>
+		</section>
+
+		<section>
+			<h2>Contact Us</h2>
+			<form>
+				<input type="text" name="fristName" placeholder="First Name" required/>
+				<input type="text" name="lastName" placeholder="Last Name" required/>
+				<input type="tel" name="phone" placeholder="Phone" required/>
+				<input type="email" name="email" placeholder="Email" required/>
+				<textarea name="message" placeholder="Message"></textarea>
+				<input type="submit" value="Submit" />
+			</form>
+		</section>
+
 	</main>
+
+	<footer>
+		<a class="copyright" href="https://arcdev.io/">&copy; Arc io</a>
+	</footer>
 
 </body>
 </html>
