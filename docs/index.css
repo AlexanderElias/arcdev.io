@@ -1,10 +1,13 @@
 :root {
 	scroll-behavior: smooth;
 
+	--red: #F44336;
 	--blue: #3F51B5;
-	--black: #333333;
+	--green: #009688;
+	--yellow: #FF9800;
 	--gray: #eeeeee;
 	--white: #fefefe;
+	--black: #333333;
 	--transparent: transparent;
 
 	--font: #333333;
@@ -41,13 +44,21 @@
 	--button-background-active: #3F51B5;
 	--button-background-active: var(--blue);
 
-	--button-font-disabled: #3F51B5;
+	--button-font-error: #F44336;
 
-	--button-font-disabled: var(--blue);
-	--button-border-disabled: #3F51B5;
-	--button-border-disabled: var(--blue);
-	--button-background-disabled: transparent;
-	--button-background-disabled: var(--transparent);
+	--button-font-error: var(--red);
+	--button-border-error: #F44336;
+	--button-border-error: var(--red);
+	--button-background-error: transparent;
+	--button-background-error: var(--transparent);
+
+	--button-font-success: #009688;
+
+	--button-font-success: var(--green);
+	--button-border-success: #009688;
+	--button-border-success: var(--green);
+	--button-background-success: transparent;
+	--button-background-success: var(--transparent);
 
 }
 * {
@@ -60,9 +71,6 @@
 	font-family: 'Roboto Mono', monospace, sans-serif;
 	transition: border-color 150ms ease-in-out, background-color 150ms ease-in-out;
 }
-/* html {
-
-} */
 body {
 	width: 100%;
 	min-height: 100vh;
@@ -104,7 +112,7 @@ form {
 	padding-bottom: 3rem;
     justify-content: center;
 }
-input[type="submit"] {
+input[type="submit"], input[type="submit"]:focus {
     flex: 0;
 	border: none;
     display: flex;
@@ -126,12 +134,22 @@ input[type="submit"]:hover {
 }
 input[type="submit"]:disabled {
 	cursor: disabled;
-	color: #3F51B5;
-	color: var(--button-font-disabled);
-	border-color: #3F51B5;
-	border-color: var(--button-border-disabled);
+}
+input[type="submit"].error {
+	color: #F44336;
+	color: var(--button-font-error);
+	border-color: #F44336;
+	border-color: var(--button-border-error);
 	background-color: transparent;
-	background-color: var(--button-background-disabled);
+	background-color: var(--button-background-error);
+}
+input[type="submit"].success {
+	color: #009688;
+	color: var(--button-font-success);
+	border-color: #009688;
+	border-color: var(--button-border-success);
+	background-color: transparent;
+	background-color: var(--button-background-success);
 }
 input, textarea {
 	border: none;

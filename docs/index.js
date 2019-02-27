@@ -19,8 +19,12 @@ Astatine.submit({
 
 		if (error) {
 			console.error(error);
+			submit.classList.add('error');
+			submit.classList.remove('success');
 			submit.value = 'Error: Please Try Again';
 		} else {
+			submit.classList.add('success');
+			submit.classList.remove('error');
 			submit.value = 'Success: Message Sent';
 		}
 	}

@@ -1,10 +1,13 @@
 :root {
 	scroll-behavior: smooth;
 
+	--red: #F44336;
 	--blue: #3F51B5;
-	--black: #333333;
+	--green: #009688;
+	--yellow: #FF9800;
 	--gray: #eeeeee;
 	--white: #fefefe;
+	--black: #333333;
 	--transparent: transparent;
 
 	--font: var(--black);
@@ -24,9 +27,13 @@
 	--button-font-active: var(--white);
 	--button-background-active: var(--blue);
 
-	--button-font-disabled: var(--blue);
-	--button-border-disabled: var(--blue);
-	--button-background-disabled: var(--transparent);
+	--button-font-error: var(--red);
+	--button-border-error: var(--red);
+	--button-background-error: var(--transparent);
+
+	--button-font-success: var(--green);
+	--button-border-success: var(--green);
+	--button-background-success: var(--transparent);
 
 }
 * {
@@ -38,9 +45,6 @@
 	font-family: 'Roboto Mono', monospace, sans-serif;
 	transition: border-color 150ms ease-in-out, background-color 150ms ease-in-out;
 }
-/* html {
-
-} */
 body {
 	width: 100%;
 	min-height: 100vh;
@@ -81,7 +85,7 @@ form {
 	padding-bottom: 3rem;
     justify-content: center;
 }
-input[type="submit"] {
+input[type="submit"], input[type="submit"]:focus {
     flex: 0;
 	border: none;
     display: flex;
@@ -100,9 +104,16 @@ input[type="submit"]:hover {
 }
 input[type="submit"]:disabled {
 	cursor: disabled;
-	color: var(--button-font-disabled);
-	border-color: var(--button-border-disabled);
-	background-color: var(--button-background-disabled);
+}
+input[type="submit"].error {
+	color: var(--button-font-error);
+	border-color: var(--button-border-error);
+	background-color: var(--button-background-error);
+}
+input[type="submit"].success {
+	color: var(--button-font-success);
+	border-color: var(--button-border-success);
+	background-color: var(--button-background-success);
 }
 input, textarea {
 	border: none;
