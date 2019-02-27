@@ -1,4 +1,5 @@
 :root {
+	scroll-behavior: smooth;
 
 	--blue: #3F51B5;
 	--black: #333333;
@@ -59,10 +60,12 @@
 	font-family: 'Roboto Mono', monospace, sans-serif;
 	transition: border-color 150ms ease-in-out, background-color 150ms ease-in-out;
 }
+/* html {
+
+} */
 body {
-	width: 100vw;
+	width: 100%;
 	min-height: 100vh;
-	overflow-x: hidden;
 	background-color: #fefefe;
 	background-color: var(--background);
 }
@@ -83,7 +86,8 @@ p {
 }
 section {
 	display: flex;
-	min-width: 100vw;
+	padding: 1rem;
+	/* min-width: 100vw; */
 	min-height: 100vh;
 	align-items: center;
 	align-content: center;
@@ -161,7 +165,6 @@ input:focus, textarea:focus {
 	height: 6rem;
 	border: none;
 	position: absolute;
-	pointer-events: none;
 }
 .arrow:hover {
 	border: none;
