@@ -65,6 +65,9 @@ h2 {
 p {
 	max-width: 600px;
 }
+img {
+	width: 100%;
+}
 section {
 	display: flex;
 	padding: 1rem;
@@ -169,6 +172,21 @@ input:focus, textarea:focus {
     text-align: center;
     text-decoration: none;
 }
+.portfolio {
+	display: flex;
+}
+.portfolio > div {
+	border: 1px solid black;
+}
+.angle {
+    left: 50%;
+    bottom: -29px;
+    position: absolute;
+    transform: translate(-50%);
+    border-top: 21px solid currentColor;
+    border-left: 21px solid transparent;
+    border-right: 21px solid transparent;
+}
 @keyframes arrow {
     0% {
 		transform: translateY(-1rem) rotate(135deg);
@@ -179,4 +197,10 @@ input:focus, textarea:focus {
     100% {
 		transform: translateY(-1rem) rotate(135deg);
     }
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 15vw;
+	}
 }
