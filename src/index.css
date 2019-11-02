@@ -59,19 +59,52 @@ h1 {
 }
 h2 {
 	font-size: 3rem;
-	font-weight: 300;
+	font-weight: bold;
 	margin-bottom: 3rem;
 }
-p {
-	max-width: 600px;
+h3 {
+	font-size: 2rem;
+	font-weight: lighter;
+	margin-bottom: 1rem;
 }
+h3 > span {
+	font-size: inherit;
+	font-weight: inherit;
+	margin-bottom: inherit;
+}
+h3 > span:nth-child(1) {
+	background-color: rgba(255,0,0,0.1);
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+h3 > span:nth-child(2) {
+	background-color: rgba(0,0,255,0.1);
+}
+h3 > span:nth-child(3) {
+	background-color: rgba(0,255,0,0.1);
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+p {
+	line-height: 1.3rem;
+}
+p > span {
+	background-color: rgba(0,0,0,0.1);
+	padding-left: 3px;
+	padding-right: 3px;
+	border-radius: 3px;
+}
+/* p {
+	max-width: 600px;
+} */
 img {
 	width: 100%;
 }
 section {
 	display: flex;
-	padding: 1rem;
-	/* min-width: 100vw; */
+	padding-left: 3vw;
+	padding-right: 6vw;
+	max-width: 1280px;
 	min-height: 100vh;
 	align-items: center;
 	align-content: center;
@@ -154,8 +187,8 @@ input:focus, textarea:focus {
 	content: '';
 	margin: auto;
 	border: none;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
 	display: block;
     border-top: solid 1px var(--arrow);
     border-right: solid 1px var(--arrow);
@@ -186,6 +219,19 @@ input:focus, textarea:focus {
     border-top: 21px solid currentColor;
     border-left: 21px solid transparent;
     border-right: 21px solid transparent;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.row > div {
+	flex-direction: column;
+	padding: 0.5rem;
+	flex-grow: 1;
+	flex-basis: 0;
+	max-width: 100%;
 }
 @keyframes arrow {
     0% {

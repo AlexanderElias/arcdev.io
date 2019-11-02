@@ -86,16 +86,52 @@ h1 {
 }
 h2 {
 	font-size: 3rem;
-	font-weight: 300;
+	font-weight: bold;
 	margin-bottom: 3rem;
 }
+h3 {
+	font-size: 2rem;
+	font-weight: lighter;
+	margin-bottom: 1rem;
+}
+h3 > span {
+	font-size: inherit;
+	font-weight: inherit;
+	margin-bottom: inherit;
+}
+h3 > span:nth-child(1) {
+	background-color: rgba(255,0,0,0.1);
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+h3 > span:nth-child(2) {
+	background-color: rgba(0,0,255,0.1);
+}
+h3 > span:nth-child(3) {
+	background-color: rgba(0,255,0,0.1);
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
 p {
+	line-height: 1.3rem;
+}
+p > span {
+	background-color: rgba(0,0,0,0.1);
+	padding-left: 3px;
+	padding-right: 3px;
+	border-radius: 3px;
+}
+/* p {
 	max-width: 600px;
+} */
+img {
+	width: 100%;
 }
 section {
 	display: flex;
-	padding: 1rem;
-	/* min-width: 100vw; */
+	padding-left: 3vw;
+	padding-right: 6vw;
+	max-width: 1280px;
 	min-height: 100vh;
 	align-items: center;
 	align-content: center;
@@ -191,8 +227,8 @@ input:focus, textarea:focus {
 	content: '';
 	margin: auto;
 	border: none;
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
 	display: block;
     border-top: solid 1px #333333;
     border-top: solid 1px var(--arrow);
@@ -214,6 +250,35 @@ input:focus, textarea:focus {
     font-weight: 400;
     text-align: center;
     text-decoration: none;
+}
+.portfolio {
+	display: flex;
+}
+.portfolio > div {
+	border: 1px solid black;
+}
+.angle {
+    left: 50%;
+    bottom: -29px;
+    position: absolute;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    border-top: 21px solid currentColor;
+    border-left: 21px solid transparent;
+    border-right: 21px solid transparent;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.row > div {
+	flex-direction: column;
+	padding: 0.5rem;
+	flex-grow: 1;
+	flex-basis: 0;
+	max-width: 100%;
 }
 @-webkit-keyframes arrow {
     0% {
@@ -242,4 +307,10 @@ input:focus, textarea:focus {
 		-webkit-transform: translateY(-1rem) rotate(135deg);
 		        transform: translateY(-1rem) rotate(135deg);
     }
+}
+
+@media screen and (max-width: 600px) {
+	h1 {
+		font-size: 15vw;
+	}
 }
