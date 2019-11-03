@@ -64,10 +64,11 @@ h2 {
 }
 h3 {
 	font-size: 2rem;
-	font-weight: lighter;
+	margin-top: 3rem;
 	margin-bottom: 1rem;
+	font-weight: lighter;
 }
-h3 > span {
+/* h3 > span {
 	font-size: inherit;
 	font-weight: inherit;
 	margin-bottom: inherit;
@@ -84,27 +85,23 @@ h3 > span:nth-child(3) {
 	background-color: rgba(0,255,0,0.1);
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
-}
+} */
 p {
+    max-width: 900px;
 	line-height: 1.3rem;
 }
 p > span {
-	background-color: rgba(0,0,0,0.1);
 	padding-left: 3px;
 	padding-right: 3px;
 	border-radius: 3px;
+	background-color: rgba(0,0,0,0.1);
 }
-/* p {
-	max-width: 600px;
-} */
 img {
 	width: 100%;
 }
 section {
 	display: flex;
-	padding-left: 3vw;
-	padding-right: 6vw;
-	max-width: 1280px;
+    padding: 0 6vw;
 	min-height: 100vh;
 	align-items: center;
 	align-content: center;
@@ -134,9 +131,6 @@ input[type="submit"], input[type="submit"]:focus {
 	color: var(--button-font-default);
 	border-color: var(--button-border-default);
 	background-color: var(--button-background-default);
-}
-input[type="submit"]:hover {
-	/* filter: brightness(100); */
 }
 input[type="submit"]:disabled {
 	cursor: disabled;
@@ -220,19 +214,6 @@ input:focus, textarea:focus {
     border-left: 21px solid transparent;
     border-right: 21px solid transparent;
 }
-.row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-}
-.row > div {
-	flex-direction: column;
-	padding: 0.5rem;
-	flex-grow: 1;
-	flex-basis: 0;
-	max-width: 100%;
-}
 @keyframes arrow {
     0% {
 		transform: translateY(-1rem) rotate(135deg);
@@ -244,7 +225,6 @@ input:focus, textarea:focus {
 		transform: translateY(-1rem) rotate(135deg);
     }
 }
-
 @media screen and (max-width: 600px) {
 	h1 {
 		font-size: 15vw;
