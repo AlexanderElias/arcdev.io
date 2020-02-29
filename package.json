@@ -12,12 +12,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/AlexanderElias/arcdev.io.git"
+		"url": "git+https://github.com/arcdevio/arcdev.io.git"
 	},
 	"author": "Arc io",
 	"license": "SEE LICENSE IN LICENSE",
 	"bugs": {
-		"url": "https://github.com/AlexanderElias/arcdev.io/issues"
+		"url": "https://github.com/arcdevio/arcdev.io/issues"
 	},
-	"homepage": "https://github.com/AlexanderElias/arcdev.io#readme"
+	"homepage": "https://github.com/arcdevio/arcdev.io#readme",
+	"dependencies": {
+		"analytic": "github:arcdevio/analytic"
+	}
 }
