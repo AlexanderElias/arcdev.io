@@ -22,6 +22,7 @@
 			if (name) data[ name ] = value;
 		}
 
+		data[ '$name' ] = 'contact';
 		data[ '$to' ] = 'jonburns10@gmail.com,alex.steven.elias@gmail.com';
 
 		fetch('/email', {
