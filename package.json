@@ -7,8 +7,8 @@
 		"doc": "docs"
 	},
 	"scripts": {
-		"build": "muleify -pt src docs",
-		"test": "muleify -swt src dev"
+		"build": "muleify -p src docs",
+		"test": "muleify -pw src dev -s dev"
 	},
 	"repository": {
 		"type": "git",

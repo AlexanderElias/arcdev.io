@@ -1,4 +1,3 @@
-
 (function () {
 
 	var submit = document.querySelector('[type="submit"]');

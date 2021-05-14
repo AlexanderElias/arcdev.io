@@ -51,7 +51,10 @@ body {
 	background-color: var(--background);
 }
 footer {
-	padding: 1rem;
+	height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 h1 {
 	font-size: 6rem;
@@ -85,10 +88,14 @@ section {
 	display: flex;
     padding: 0 6vw;
 	min-height: 100vh;
+	position: relative;
 	align-items: center;
 	align-content: center;
 	flex-direction: column;
 	justify-content: center;
+}
+section:last-child {
+	min-height: 95vh;
 }
 form {
 	display: flex;
@@ -195,6 +202,17 @@ input:focus, textarea:focus {
     border-top: 21px solid currentColor;
     border-left: 21px solid transparent;
     border-right: 21px solid transparent;
+}
+.action  {
+    display: flex;
+    outline: none;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    border-radius: 2px;
+    color: var(--white);
+    text-decoration: none;
+    background: var(--blue);
 }
 @keyframes arrow {
     0% {
