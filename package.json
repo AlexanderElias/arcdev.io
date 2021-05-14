@@ -19,8 +19,5 @@
 	"bugs": {
 		"url": "https://github.com/arcdevio/arcdev.io/issues"
 	},
-	"homepage": "https://github.com/arcdevio/arcdev.io#readme",
-	"dependencies": {
-		"analytic": "github:arcdevio/analytic"
-	}
+	"homepage": "https://github.com/arcdevio/arcdev.io#readme"
 }
