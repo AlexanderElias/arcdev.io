@@ -30,7 +30,7 @@
 			body: JSON.stringify(data)
 		}).then(function (result) {
 			if (result.status !== 200) throw new Error(result.statusText);
-		}).then(function (data) {
+		}).then(function () {
 			form.reset();
 			submit.classList.add('success');
 			submit.classList.remove('error');
